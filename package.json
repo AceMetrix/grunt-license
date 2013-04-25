@@ -1,7 +1,7 @@
 {
   "name": "grunt-license",
   "description": "Generates a list of licenses used in a project",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/badunk/grunt-license",
   "author": {
     "name": "Duncan Wong",
