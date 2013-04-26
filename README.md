@@ -67,24 +67,5 @@ Default Value: `LICENSES`
 
 The path/filename to write the metadata to (WIP: should eventually output the actual licenses)
 
-### Usage Examples
-
-#### Default Options
-
-```js
-grunt.initConfig({
-  license: {
-    options: {
-      unknown: true,
-      start: './node_modules/mocha'
-    },
-    all: {
-    },
-  },
-})
-```
-
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
-
-## Release History
