@@ -9,6 +9,8 @@
 'use strict';
 
 var checker = require('license-checker');
+var fs = require('fs');
+var colors = require('colors');
 
 module.exports = function(grunt) {
 
@@ -17,8 +19,19 @@ module.exports = function(grunt) {
 
     grunt.registerMultiTask('license', 'Generates list of licenses for your project', function() {
         var done = this.async();
-        checker.init({start: '.', unknown: true}, function(data){
-            console.log(data);
+        var defaults = {
+            start: '.',
+            unknown: false,
+            depth: 1,
+            include: 'all',
+            output: 'LICENSES'
+        };
+        var options = grunt.util._.extend(defaults, this.data);
+        checker.init(options, function(data){
+            if (options.output) {
+                fs.writeFileSync(options.output, JSON.stringify(data, null, 4));
+                console.log('Successfully written '.green + options.output.grey);
+            }
             done();
         });
     });
