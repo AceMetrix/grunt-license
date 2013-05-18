@@ -2,8 +2,6 @@
 
 > Generates a list of recursively dependent licenses used within a project
 
-Currently a WIP!!
-
 ## Getting Started
 This plugin requires Grunt `~0.4.1`
 
@@ -47,28 +45,27 @@ Only generate a list of unknown licenses (as opposed to all)
 
 #### options.start
 Type: `String`
-Default value: `.'`
+Default value: `.`
 
 Project directory from which to start the search
 
-### Usage Examples
+#### options.depth
+Type: `Number`
+Default Value: `1`
 
-#### Default Options
+How deep to search for dependencies.  Setting value to `null` will recurse through all.
 
-```js
-grunt.initConfig({
-  license: {
-    options: {
-      unknown: true,
-      start: './node_modules/mocha'
-    },
-    all: {
-    },
-  },
-})
-```
+#### options.include
+Type: `String` or `Array`
+Default Value: `all`
+
+The types of dependencies to include, such as: `["dependencies", "devDependencies", "peerDependencies"]`.
+
+#### options.output
+Type: `String`
+Default Value: `LICENSES`
+
+The path/filename to write the metadata to (WIP: should eventually output the actual licenses)
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
-
-## Release History
