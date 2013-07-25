@@ -1,23 +1,23 @@
 {
   "name": "grunt-license",
   "description": "Generates a list of licenses used in a project",
-  "version": "0.1.3",
-  "homepage": "https://github.com/badunk/grunt-license",
+  "version": "0.1.4",
+  "homepage": "https://github.com/AceMetrix/grunt-license",
   "author": {
     "name": "Duncan Wong",
     "email": "baduncaduncan@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/badunk/grunt-license.git"
+    "url": "git://github.com/AceMetrix/grunt-license.git"
   },
   "bugs": {
-    "url": "https://github.com/badunk/grunt-license/issues"
+    "url": "https://github.com/AceMetrix/grunt-license/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/badunk/grunt-license/blob/master/LICENSE-MIT"
+      "url": "https://github.com/AceMetrix/grunt-license/blob/master/LICENSE-MIT"
     }
   ],
   "main": "Gruntfile.js",
