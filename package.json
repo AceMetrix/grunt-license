@@ -1,7 +1,7 @@
 {
   "name": "grunt-license",
   "description": "Generates a list of licenses used in a project",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "homepage": "https://github.com/AceMetrix/grunt-license",
   "author": {
     "name": "Duncan Wong",
@@ -42,6 +42,7 @@
   ],
   "dependencies": {
     "colors": "~0.6.0-1",
-    "npm-license": "~0.1.0"
+    "npm-license": "~0.1.0",
+    "license-checker": "0.0.7"
   }
 }
