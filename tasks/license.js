@@ -7,7 +7,7 @@
  */
 
 'use strict';
-
+var treeify = require('treeify');
 var checker = require('license-checker');
 var fs = require('fs');
 var colors = require('colors');
@@ -31,6 +31,8 @@ module.exports = function(grunt) {
             if (options.output) {
                 fs.writeFileSync(options.output, JSON.stringify(data, null, 4));
                 console.log('Successfully written '.green + options.output.grey);
+            }else{
+                console.log(treeify.asTree(data, true));   
             }
             done();
         });
